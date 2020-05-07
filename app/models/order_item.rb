@@ -22,4 +22,8 @@ class OrderItem < ApplicationRecord
   def self.total(order_id)
     where(order_id: order_id).pluck(:price).sum
   end
+
+  def self.whatsup
+    "What's up"
+  end
 end

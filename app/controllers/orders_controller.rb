@@ -9,6 +9,7 @@ class OrdersController < ApplicationController
     @order = Order.find(params[:id])
   end
 
+  #this is a thing
   def create
     order = Order.new(user: current_user)
     if order.save
